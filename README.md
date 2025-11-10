@@ -1,64 +1,68 @@
-# my-first-ai-agent
-🤖 My First AI Agent
+# 🤖 My First AI Agent
 
-This project showcases my first AI agent, built using Google’s Agent Development Kit (ADK) and Gemini, capable of reasoning, taking actions, and using real-world tools (like Google Search) to provide live, updated answers — not just static text.
+This project showcases my **first AI agent**, built using **Google’s Agent Development Kit (ADK)** and **Gemini**, capable of reasoning, taking actions, and using real-world tools (like Google Search) to provide **live, up-to-date answers** — not just static text.
 
-🧠 This agent doesn’t just respond — it thinks, acts, and observes before answering.
+🧠 This agent doesn’t just respond — it **thinks, acts, and observes** before answering.
 
-🚀 Features
+---
 
-✅ Built using Google’s Agent Development Kit (ADK)
+## 🚀 Features
 
-🔍 Uses Gemini API for intelligent reasoning
+✅ Built with **Google’s Agent Development Kit (ADK)**  
+🔍 Uses **Gemini API** for intelligent reasoning  
+🌐 Integrates **Google Search tool** for real-time information  
+🧩 Modular agent architecture — easily expandable into multi-agent systems  
+💡 Runs seamlessly in **Kaggle Notebooks** or any Python environment  
 
-🌐 Integrates Google Search tool for real-time, up-to-date information
+---
 
-🧩 Modular agent architecture — easy to expand into multi-agent systems
-
-💡 Runs seamlessly in Kaggle Notebooks or any Python environment
-
-🧠 How It Works
+## 🧠 How It Works
 
 An AI agent can reason, take actions, and use tools to improve its responses.
-Here’s the basic flow:
+
+**Flow:**
+
+
 
 Prompt → Agent → Thought → Action → Observation → Final Answer
 
 
-For example, when you ask:
+**Example Query:**
 
-“What’s the weather in London?”
+> “What’s the weather in London?”
 
 The agent:
+1. Thinks about what’s needed (current weather info).  
+2. Takes an action (uses Google Search).  
+3. Observes the result.  
+4. Responds with a real-time, accurate answer.
 
-Thinks about what’s needed (current weather info).
+---
 
-Takes an action (uses Google Search).
+## ⚙️ Technologies Used
 
-Observes the search result.
+| Category | Tools / Libraries |
+|-----------|------------------|
+| 🧠 AI Model | Gemini 2.5 Flash Lite |
+| 🧰 SDK | Google Agent Development Kit (ADK) |
+| 🧩 Runner | InMemoryRunner |
+| 🔧 Tool | google_search |
+| 💬 Language | Python 3.11 |
+| ☁️ Platform | Kaggle Notebooks |
+| 🔒 Secrets | GOOGLE_API_KEY (securely stored in Kaggle Secrets) |
 
-Responds with a real-time answer.
+---
 
-⚙️ Technologies Used
-Category	Tools / Libraries
-🧠 AI Model	Gemini 2.5 Flash Lite
-🧰 SDK	Google Agent Development Kit (ADK)
-🧩 Runner	InMemoryRunner
-🔧 Tool	google_search
-💬 Framework	Python 3.11
-☁️ Platform	Kaggle Notebook
-🔒 Secrets	GOOGLE_API_KEY stored securely in Kaggle Secrets
-🧾 Setup Guide
-1️⃣ Get Your Gemini API Key
+## 🧾 Setup Guide
 
-Go to Google AI Studio
+### 1️⃣ Get Your Gemini API Key
+- Go to [**Google AI Studio**](https://aistudio.google.com/app/apikey)  
+- Create a new key and copy it safely
 
-Create a new key and copy it safely
-
-2️⃣ Add It to Kaggle Notebook
-
+### 2️⃣ Add It to Kaggle Notebook
 In your Kaggle Notebook:
 
+```python
 import os
 from kaggle_secrets import UserSecretsClient
 
@@ -121,12 +125,23 @@ __pycache__/
 .idea/
 *.log
 
-📦 Future Scope
+🧭 Future Scope
 
-🧩 Add multiple collaborating agents (multi-agent system)
+🧩 Build a multi-agent system with collaborative agents
+⚙️ Integrate custom tools (API calls, data analysis, web scraping)
+🧠 Deploy the agent as a web service using adk web
+📊 Add logging and observability for tracking reasoning steps
 
-⚙️ Integrate custom tools (API calls, data analysis)
+🧠 Key Highlights
 
-🧠 Deploy agent as a web service using adk web
+Real-time reasoning and live data fetching
 
-🧭 Add logging and observability for agent decision tracking
+Runs 100% securely — API key stored in Kaggle Secrets
+
+Easily portable to any Python environment
+
+
+
+Built with Google’s ADK and Gemini 2.5 Flash Lite, fully implemented in Python and executed on Kaggle.
+
+💬 “From prompt to action — this AI agent truly thinks before it answers.”
